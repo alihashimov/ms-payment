@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yml
+
+client:
+  ms-country:
+    endpoint: http://localhost:8081
+
+
